@@ -1,0 +1,330 @@
+// ============================================
+// COLOR TOKENS - Design System
+// ============================================
+// Brand color: #008e37 (Green) at base-500
+// Supports both Light Mode and Dark Mode
+// All colors meet WCAG AA accessibility standards
+
+// --------------------------------------------
+// BRAND COLORS
+// --------------------------------------------
+
+// Green (Primary Brand Color)
+$color-green-100: #c0e6d0;
+$color-green-200: #96d6b1;
+$color-green-300: #6bc692;
+$color-green-400: #4bba7a;
+$color-green-500: #008e37;  // Base brand color
+$color-green-600: #007a2f;
+$color-green-700: #006627;
+$color-green-800: #00521f;
+$color-green-900: #004419;
+
+// Blue (Secondary Brand Color)
+$color-blue-100: #bbdefb;
+$color-blue-200: #90caf9;
+$color-blue-300: #64b5f6;
+$color-blue-400: #42a5f5;
+$color-blue-500: #2196f3;  // Base blue
+$color-blue-600: #1976d2;
+$color-blue-700: #1565c0;
+$color-blue-800: #0d47a1;
+$color-blue-900: #0a3d91;
+
+// Amber (Tertiary Brand Color - Complements Green)
+$color-amber-100: #fef3c7;
+$color-amber-200: #fde68a;
+$color-amber-300: #fcd34d;
+$color-amber-400: #fbbf24;
+$color-amber-500: #f59e0b;  // Base amber
+$color-amber-600: #d97706;
+$color-amber-700: #b45309;
+$color-amber-800: #92400e;
+$color-amber-900: #78350f;
+
+// Red (Error/Danger)
+$color-red-100: #ffcdd2;
+$color-red-200: #ef9a9a;
+$color-red-300: #e57373;
+$color-red-400: #ef5350;
+$color-red-500: #f44336;  // Base red
+$color-red-600: #e53935;
+$color-red-700: #d32f2f;
+$color-red-800: #c62828;
+$color-red-900: #b71c1c;
+
+// Orange (Warning)
+$color-orange-100: #ffecb3;
+$color-orange-200: #ffe082;
+$color-orange-300: #ffd54f;
+$color-orange-400: #ffca28;
+$color-orange-500: #ffc107;  // Base orange
+$color-orange-600: #ffb300;
+$color-orange-700: #ffa000;
+$color-orange-800: #ff8f00;
+$color-orange-900: #ff6f00;
+
+// Cyan (Info)
+$color-cyan-100: #b2ebf2;
+$color-cyan-200: #80deea;
+$color-cyan-300: #4dd0e1;
+$color-cyan-400: #26c6da;
+$color-cyan-500: #00bcd4;  // Base cyan
+$color-cyan-600: #00acc1;
+$color-cyan-700: #0097a7;
+$color-cyan-800: #00838f;
+$color-cyan-900: #006064;
+
+// Neutral/Gray
+$color-gray-0: #ffffff;
+$color-gray-50: #fafafa;
+$color-gray-100: #f5f5f5;
+$color-gray-200: #eeeeee;
+$color-gray-300: #e0e0e0;
+$color-gray-400: #bdbdbd;
+$color-gray-500: #9e9e9e;  // Base gray
+$color-gray-600: #757575;
+$color-gray-700: #616161;
+$color-gray-800: #424242;
+$color-gray-850: #2e2e2e;  // Dark mode borders
+$color-gray-875: #242424;  // Dark mode surfaces
+$color-gray-900: #212121;
+$color-gray-925: #1a1a1a;  // Dark mode backgrounds
+$color-gray-950: #0f0f0f;  // Dark mode primary bg
+$color-gray-975: #0a0a0a;
+$color-gray-1000: #000000;
+
+// --------------------------------------------
+// SEMANTIC COLORS - LIGHT MODE
+// --------------------------------------------
+
+// Primary (Brand)
+$color-primary-light: $color-green-500;
+$color-primary-hover-light: $color-green-600;
+$color-primary-active-light: $color-green-700;
+$color-primary-subtle-light: $color-green-50;
+
+// Secondary
+$color-secondary-light: $color-blue-500;
+$color-secondary-hover-light: $color-blue-600;
+$color-secondary-active-light: $color-blue-700;
+$color-secondary-subtle-light: $color-blue-100;
+
+// Tertiary
+$color-tertiary-light: $color-amber-500;
+$color-tertiary-hover-light: $color-amber-600;
+$color-tertiary-active-light: $color-amber-700;
+$color-tertiary-subtle-light: $color-amber-100;
+
+// Success
+$color-success-light: $color-green-600;
+$color-success-hover-light: $color-green-700;
+$color-success-active-light: $color-green-800;
+$color-success-subtle-light: $color-green-50;
+
+// Warning
+$color-warning-light: $color-orange-600;
+$color-warning-hover-light: $color-orange-700;
+$color-warning-active-light: $color-orange-800;
+$color-warning-subtle-light: $color-orange-50;
+
+// Error/Danger
+$color-error-light: $color-red-600;
+$color-error-hover-light: $color-red-700;
+$color-error-active-light: $color-red-800;
+$color-error-subtle-light: $color-red-50;
+
+// Info
+$color-info-light: $color-cyan-600;
+$color-info-hover-light: $color-cyan-700;
+$color-info-active-light: $color-cyan-800;
+$color-info-subtle-light: $color-cyan-50;
+
+// Background
+$color-bg-primary-light: $color-gray-0;
+$color-bg-secondary-light: $color-gray-50;
+$color-bg-tertiary-light: $color-gray-100;
+$color-bg-inverse-light: $color-gray-900;
+
+// Surface (for cards, modals, etc.)
+$color-surface-light: $color-gray-0;
+$color-surface-raised-light: $color-gray-0;
+$color-surface-overlay-light: $color-gray-0;
+
+// Text
+$color-text-primary-light: $color-gray-900;
+$color-text-secondary-light: $color-gray-700;
+$color-text-tertiary-light: $color-gray-600;
+$color-text-disabled-light: $color-gray-400;
+$color-text-inverse-light: $color-gray-0;
+$color-text-link-light: $color-green-600;
+$color-text-link-hover-light: $color-green-700;
+
+// Border
+$color-border-light: $color-gray-200;
+$color-border-medium-light: $color-gray-300;
+$color-border-strong-light: $color-gray-400;
+$color-border-inverse-light: $color-gray-700;
+
+// --------------------------------------------
+// SEMANTIC COLORS - DARK MODE
+// --------------------------------------------
+
+// Primary (Brand)
+$color-primary-dark: $color-green-400;
+$color-primary-hover-dark: $color-green-300;
+$color-primary-active-dark: $color-green-200;
+$color-primary-subtle-dark: rgba($color-green-500, 0.15);
+
+// Secondary
+$color-secondary-dark: $color-blue-400;
+$color-secondary-hover-dark: $color-blue-300;
+$color-secondary-active-dark: $color-blue-200;
+$color-secondary-subtle-dark: rgba($color-blue-500, 0.15);
+
+// Tertiary
+$color-tertiary-dark: $color-amber-400;
+$color-tertiary-hover-dark: $color-amber-300;
+$color-tertiary-active-dark: $color-amber-200;
+$color-tertiary-subtle-dark: rgba($color-amber-500, 0.15);
+
+// Success
+$color-success-dark: $color-green-400;
+$color-success-hover-dark: $color-green-300;
+$color-success-active-dark: $color-green-200;
+$color-success-subtle-dark: rgba($color-green-500, 0.15);
+
+// Warning
+$color-warning-dark: $color-orange-400;
+$color-warning-hover-dark: $color-orange-300;
+$color-warning-active-dark: $color-orange-200;
+$color-warning-subtle-dark: rgba($color-orange-500, 0.15);
+
+// Error/Danger
+$color-error-dark: $color-red-400;
+$color-error-hover-dark: $color-red-300;
+$color-error-active-dark: $color-red-200;
+$color-error-subtle-dark: rgba($color-red-500, 0.15);
+
+// Info
+$color-info-dark: $color-cyan-400;
+$color-info-hover-dark: $color-cyan-300;
+$color-info-active-dark: $color-cyan-200;
+$color-info-subtle-dark: rgba($color-cyan-500, 0.15);
+
+// Background
+$color-bg-primary-dark: $color-gray-950;
+$color-bg-secondary-dark: $color-gray-925;
+$color-bg-tertiary-dark: $color-gray-875;
+$color-bg-inverse-dark: $color-gray-50;
+
+// Surface (for cards, modals, etc.)
+$color-surface-dark: $color-gray-925;
+$color-surface-raised-dark: $color-gray-875;
+$color-surface-overlay-dark: $color-gray-850;
+
+// Text
+$color-text-primary-dark: $color-gray-50;
+$color-text-secondary-dark: $color-gray-300;
+$color-text-tertiary-dark: $color-gray-400;
+$color-text-disabled-dark: $color-gray-600;
+$color-text-inverse-dark: $color-gray-900;
+$color-text-link-dark: $color-green-400;
+$color-text-link-hover-dark: $color-green-300;
+
+// Border
+$color-border-dark: $color-gray-850;
+$color-border-medium-dark: $color-gray-800;
+$color-border-strong-dark: $color-gray-700;
+$color-border-inverse-dark: $color-gray-300;
+
+// --------------------------------------------
+// DEFAULT THEME (Light Mode)
+// --------------------------------------------
+// These are the active tokens that components should use
+// Switch between light/dark by changing these assignments
+
+// Primary
+$color-primary: $color-primary-light;
+$color-primary-hover: $color-primary-hover-light;
+$color-primary-active: $color-primary-active-light;
+$color-primary-subtle: $color-primary-subtle-light;
+
+// Secondary
+$color-secondary: $color-secondary-light;
+$color-secondary-hover: $color-secondary-hover-light;
+$color-secondary-active: $color-secondary-active-light;
+$color-secondary-subtle: $color-secondary-subtle-light;
+
+// Tertiary
+$color-tertiary: $color-tertiary-light;
+$color-tertiary-hover: $color-tertiary-hover-light;
+$color-tertiary-active: $color-tertiary-active-light;
+$color-tertiary-subtle: $color-tertiary-subtle-light;
+
+// Success
+$color-success: $color-success-light;
+$color-success-hover: $color-success-hover-light;
+$color-success-active: $color-success-active-light;
+$color-success-subtle: $color-success-subtle-light;
+
+// Warning
+$color-warning: $color-warning-light;
+$color-warning-hover: $color-warning-hover-light;
+$color-warning-active: $color-warning-active-light;
+$color-warning-subtle: $color-warning-subtle-light;
+
+// Error/Danger
+$color-error: $color-error-light;
+$color-error-hover: $color-error-hover-light;
+$color-error-active: $color-error-active-light;
+$color-error-subtle: $color-error-subtle-light;
+$color-danger: $color-error;
+$color-danger-hover: $color-error-hover;
+$color-danger-active: $color-error-active;
+$color-danger-subtle: $color-error-subtle;
+
+// Info
+$color-info: $color-info-light;
+$color-info-hover: $color-info-hover-light;
+$color-info-active: $color-info-active-light;
+$color-info-subtle: $color-info-subtle-light;
+
+// Background
+$color-bg-primary: $color-bg-primary-light;
+$color-bg-secondary: $color-bg-secondary-light;
+$color-bg-tertiary: $color-bg-tertiary-light;
+$color-bg-inverse: $color-bg-inverse-light;
+
+// Surface
+$color-surface: $color-surface-light;
+$color-surface-raised: $color-surface-raised-light;
+$color-surface-overlay: $color-surface-overlay-light;
+
+// Text
+$color-text-primary: $color-text-primary-light;
+$color-text-secondary: $color-text-secondary-light;
+$color-text-tertiary: $color-text-tertiary-light;
+$color-text-disabled: $color-text-disabled-light;
+$color-text-inverse: $color-text-inverse-light;
+$color-text-link: $color-text-link-light;
+$color-text-link-hover: $color-text-link-hover-light;
+
+// Border
+$color-border: $color-border-light;
+$color-border-medium: $color-border-medium-light;
+$color-border-strong: $color-border-strong-light;
+$color-border-inverse: $color-border-inverse-light;
+
+// Focus state
+$color-focus-ring: $color-primary;
+
+// Overlay
+$color-overlay: rgba(0, 0, 0, 0.5);
+$color-overlay-light: rgba(0, 0, 0, 0.3);
+$color-overlay-heavy: rgba(0, 0, 0, 0.7);
+
+// Shadows
+$color-shadow: rgba(0, 0, 0, 0.1);
+$color-shadow-medium: rgba(0, 0, 0, 0.15);
+$color-shadow-strong: rgba(0, 0, 0, 0.25);

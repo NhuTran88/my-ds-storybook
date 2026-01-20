@@ -1,0 +1,183 @@
+// ============================================
+// SPACING TOKENS - Design System
+// ============================================
+// Base: 1rem = 10px (set in html { font-size: 62.5%; })
+// Follows 8pt grid system for consistency
+
+// --------------------------------------------
+// BASE UNIT
+// --------------------------------------------
+
+$base-unit: 0.8rem; // 8px - Base unit for 8pt grid
+
+// --------------------------------------------
+// SPACING SCALE (8pt Grid System)
+// --------------------------------------------
+// Following 8pt increments for visual consistency
+
+$spacing-0: 0;           // 0px
+$spacing-1: 0.4rem;      // 4px  - Half unit (for tight spacing)
+$spacing-2: 0.8rem;      // 8px  - Base unit
+$spacing-3: 1.2rem;      // 12px - 1.5x
+$spacing-4: 1.6rem;      // 16px - 2x
+$spacing-5: 2.0rem;      // 20px - 2.5x
+$spacing-6: 2.4rem;      // 24px - 3x
+$spacing-7: 2.8rem;      // 28px - 3.5x
+$spacing-8: 3.2rem;      // 32px - 4x
+$spacing-10: 4.0rem;     // 40px - 5x
+$spacing-12: 4.8rem;     // 48px - 6x
+$spacing-14: 5.6rem;     // 56px - 7x
+$spacing-16: 6.4rem;     // 64px - 8x
+$spacing-20: 8.0rem;     // 80px - 10x
+$spacing-24: 9.6rem;     // 96px - 12x
+$spacing-28: 11.2rem;    // 112px - 14x
+$spacing-32: 12.8rem;    // 128px - 16x
+$spacing-36: 14.4rem;    // 144px - 18x
+$spacing-40: 16.0rem;    // 160px - 20x
+$spacing-48: 19.2rem;    // 192px - 24x
+$spacing-56: 22.4rem;    // 224px - 28x
+$spacing-64: 25.6rem;    // 256px - 32x
+
+// --------------------------------------------
+// SEMANTIC SPACING
+// --------------------------------------------
+// Use these for common spacing patterns
+
+// Component Internal Spacing
+$spacing-xs: $spacing-1;      // 4px  - Extra small (icon padding, tight gaps)
+$spacing-sm: $spacing-2;      // 8px  - Small (compact components)
+$spacing-md: $spacing-4;      // 16px - Medium (default component padding)
+$spacing-lg: $spacing-6;      // 24px - Large (comfortable spacing)
+$spacing-xl: $spacing-8;      // 32px - Extra large (section spacing)
+$spacing-2xl: $spacing-12;    // 48px - 2X large (major sections)
+$spacing-3xl: $spacing-16;    // 64px - 3X large (page sections)
+$spacing-4xl: $spacing-24;    // 96px - 4X large (hero sections)
+
+// Layout Spacing
+$spacing-section: $spacing-16;        // 64px - Between major sections
+$spacing-container: $spacing-8;       // 32px - Container padding
+$spacing-gutter: $spacing-6;          // 24px - Grid gutter
+$spacing-stack-sm: $spacing-2;        // 8px  - Tight vertical stack
+$spacing-stack-md: $spacing-4;        // 16px - Default vertical stack
+$spacing-stack-lg: $spacing-8;        // 32px - Loose vertical stack
+
+// Component Specific
+$spacing-button-padding-x: $spacing-6;    // 24px - Button horizontal padding
+$spacing-button-padding-y: $spacing-3;    // 12px - Button vertical padding
+$spacing-input-padding-x: $spacing-4;     // 16px - Input horizontal padding
+$spacing-input-padding-y: $spacing-3;     // 12px - Input vertical padding
+$spacing-card-padding: $spacing-6;        // 24px - Card padding
+$spacing-modal-padding: $spacing-8;       // 32px - Modal padding
+
+// --------------------------------------------
+// BREAKPOINTS
+// --------------------------------------------
+// Responsive design breakpoints
+// Mobile-first approach: min-width breakpoints
+
+$breakpoint-mobile: 0;          // Mobile devices (default, no media query needed)
+$breakpoint-tablet: 768px;      // Tablets (portrait and up)
+$breakpoint-laptop: 1024px;     // Laptops and small desktops
+$breakpoint-desktop: 1300px;    // Desktop and larger screens
+
+// Legacy aliases (for backward compatibility if needed)
+$breakpoint-sm: $breakpoint-tablet;
+$breakpoint-md: $breakpoint-laptop;
+$breakpoint-lg: $breakpoint-desktop;
+$breakpoint-xl: 1536px;         // Extra wide screens
+
+// --------------------------------------------
+// CONTAINER WIDTHS
+// --------------------------------------------
+// Max widths for content containers at different breakpoints
+
+$container-sm: 640px;       // Small container
+$container-md: 768px;       // Medium container
+$container-lg: 1024px;      // Large container
+$container-xl: 1280px;      // Extra large container
+$container-2xl: 1536px;     // 2X large container
+
+// Default container max-width
+$container-max-width: $container-xl;
+
+// Container padding (responsive)
+$container-padding-mobile: $spacing-4;    // 16px on mobile
+$container-padding-tablet: $spacing-6;    // 24px on tablet
+$container-padding-desktop: $spacing-8;   // 32px on desktop
+
+// --------------------------------------------
+// BORDER RADIUS
+// --------------------------------------------
+// Following 8pt grid for consistency
+
+$radius-none: 0;
+$radius-sm: 0.4rem;      // 4px  - Small radius (buttons, inputs)
+$radius-md: 0.8rem;      // 8px  - Medium radius (cards)
+$radius-lg: 1.2rem;      // 12px - Large radius (modals)
+$radius-xl: 1.6rem;      // 16px - Extra large radius
+$radius-2xl: 2.4rem;     // 24px - 2X large radius
+$radius-3xl: 3.2rem;     // 32px - 3X large radius
+$radius-full: 9999px;    // Full radius (pills, avatars)
+
+// Semantic radius
+$radius-button: $radius-sm;
+$radius-input: $radius-sm;
+$radius-card: $radius-md;
+$radius-modal: $radius-lg;
+$radius-avatar: $radius-full;
+
+// --------------------------------------------
+// Z-INDEX SCALE
+// --------------------------------------------
+// Consistent layering system
+
+$z-index-base: 0;
+$z-index-dropdown: 100;
+$z-index-sticky: 200;
+$z-index-fixed: 300;
+$z-index-modal-backdrop: 400;
+$z-index-modal: 500;
+$z-index-popover: 600;
+$z-index-tooltip: 700;
+$z-index-notification: 800;
+$z-index-max: 999;
+
+// --------------------------------------------
+// SHADOWS
+// --------------------------------------------
+// Elevation system using box-shadow
+
+$shadow-none: none;
+$shadow-xs: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+$shadow-sm: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.06);
+$shadow-md: 0 0.4rem 0.6rem -0.1rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.4rem -0.1rem rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 1.0rem 1.5rem -0.3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.6rem -0.2rem rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 2.0rem 2.5rem -0.5rem rgba(0, 0, 0, 0.1), 0 0.8rem 1.0rem -0.4rem rgba(0, 0, 0, 0.04);
+$shadow-2xl: 0 2.5rem 5.0rem -1.2rem rgba(0, 0, 0, 0.25);
+
+// Semantic shadows
+$shadow-card: $shadow-sm;
+$shadow-dropdown: $shadow-md;
+$shadow-modal: $shadow-xl;
+$shadow-button-hover: $shadow-md;
+
+// --------------------------------------------
+// TRANSITIONS
+// --------------------------------------------
+// Consistent animation timing
+
+$transition-fast: 150ms;
+$transition-base: 200ms;
+$transition-slow: 300ms;
+$transition-slower: 500ms;
+
+// Easing functions
+$ease-in: cubic-bezier(0.4, 0, 1, 1);
+$ease-out: cubic-bezier(0, 0, 0.2, 1);
+$ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Common transitions
+$transition-all: all $transition-base $ease-in-out;
+$transition-colors: color $transition-base $ease-in-out, background-color $transition-base $ease-in-out, border-color $transition-base $ease-in-out;
+$transition-transform: transform $transition-base $ease-in-out;
+$transition-opacity: opacity $transition-base $ease-in-out;
