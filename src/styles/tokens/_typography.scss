@@ -1,0 +1,226 @@
+// ============================================
+// TYPOGRAPHY TOKENS - Design System
+// ============================================
+// Primary Font: Sono (Google Fonts)
+// Base weight: 400
+// Base size: 1rem = 10px (requires html { font-size: 62.5%; })
+
+// --------------------------------------------
+// FONT IMPORTS
+// --------------------------------------------
+// Import Google Font Sono
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+// --------------------------------------------
+// FONT FAMILIES
+// --------------------------------------------
+$font-family-primary: 'Sono', monospace;
+$font-family-mono: 'Sono', 'Monaco', 'Courier New', monospace;
+$font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+// Default font family
+$font-family-base: $font-family-primary;
+
+// --------------------------------------------
+// FONT WEIGHTS
+// --------------------------------------------
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;  // Base weight
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// Semantic weights
+$font-weight-normal: $font-weight-regular;
+$font-weight-heading: $font-weight-bold;
+
+// --------------------------------------------
+// FONT SIZES (Based on 1rem = 10px)
+// --------------------------------------------
+// Using modular scale for harmonious typography
+
+$font-size-xs: 1.2rem;      // 12px
+$font-size-sm: 1.4rem;      // 14px
+$font-size-base: 1.6rem;    // 16px - Base size
+$font-size-md: 1.8rem;      // 18px
+$font-size-lg: 2.0rem;      // 20px
+$font-size-xl: 2.4rem;      // 24px
+$font-size-2xl: 3.0rem;     // 30px
+$font-size-3xl: 3.6rem;     // 36px
+$font-size-4xl: 4.8rem;     // 48px
+$font-size-5xl: 6.0rem;     // 60px
+$font-size-6xl: 7.2rem;     // 72px
+
+// --------------------------------------------
+// LINE HEIGHTS
+// --------------------------------------------
+$line-height-none: 1;
+$line-height-tight: 1.25;
+$line-height-snug: 1.375;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.625;
+$line-height-loose: 2;
+
+// Semantic line heights
+$line-height-heading: $line-height-tight;
+$line-height-body: $line-height-normal;
+
+// --------------------------------------------
+// LETTER SPACING
+// --------------------------------------------
+$letter-spacing-tighter: -0.05em;
+$letter-spacing-tight: -0.025em;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.025em;
+$letter-spacing-wider: 0.05em;
+$letter-spacing-widest: 0.1em;
+
+// --------------------------------------------
+// HEADING STYLES
+// --------------------------------------------
+
+// H1 - Display Large
+$heading-1-size: $font-size-5xl;          // 60px
+$heading-1-weight: $font-weight-bold;
+$heading-1-line-height: $line-height-tight;
+$heading-1-letter-spacing: $letter-spacing-tight;
+
+// H2 - Display Medium
+$heading-2-size: $font-size-4xl;          // 48px
+$heading-2-weight: $font-weight-bold;
+$heading-2-line-height: $line-height-tight;
+$heading-2-letter-spacing: $letter-spacing-tight;
+
+// H3 - Display Small
+$heading-3-size: $font-size-3xl;          // 36px
+$heading-3-weight: $font-weight-semibold;
+$heading-3-line-height: $line-height-snug;
+$heading-3-letter-spacing: $letter-spacing-normal;
+
+// H4 - Heading Large
+$heading-4-size: $font-size-2xl;          // 30px
+$heading-4-weight: $font-weight-semibold;
+$heading-4-line-height: $line-height-snug;
+$heading-4-letter-spacing: $letter-spacing-normal;
+
+// H5 - Heading Medium
+$heading-5-size: $font-size-xl;           // 24px
+$heading-5-weight: $font-weight-medium;
+$heading-5-line-height: $line-height-normal;
+$heading-5-letter-spacing: $letter-spacing-normal;
+
+// H6 - Heading Small
+$heading-6-size: $font-size-lg;           // 20px
+$heading-6-weight: $font-weight-medium;
+$heading-6-line-height: $line-height-normal;
+$heading-6-letter-spacing: $letter-spacing-normal;
+
+// --------------------------------------------
+// BODY TEXT STYLES
+// --------------------------------------------
+
+// Body Large
+$body-lg-size: $font-size-lg;             // 20px
+$body-lg-weight: $font-weight-regular;
+$body-lg-line-height: $line-height-relaxed;
+
+// Body Base (Default)
+$body-base-size: $font-size-base;         // 16px
+$body-base-weight: $font-weight-regular;
+$body-base-line-height: $line-height-normal;
+
+// Body Small
+$body-sm-size: $font-size-sm;             // 14px
+$body-sm-weight: $font-weight-regular;
+$body-sm-line-height: $line-height-normal;
+
+// Body Extra Small
+$body-xs-size: $font-size-xs;             // 12px
+$body-xs-weight: $font-weight-regular;
+$body-xs-line-height: $line-height-normal;
+
+// --------------------------------------------
+// SPECIAL TEXT STYLES
+// --------------------------------------------
+
+// Lead Text (Intro paragraphs)
+$lead-size: $font-size-xl;                // 24px
+$lead-weight: $font-weight-regular;
+$lead-line-height: $line-height-relaxed;
+
+// Caption
+$caption-size: $font-size-sm;             // 14px
+$caption-weight: $font-weight-regular;
+$caption-line-height: $line-height-normal;
+
+// Overline (Small labels)
+$overline-size: $font-size-xs;            // 12px
+$overline-weight: $font-weight-semibold;
+$overline-line-height: $line-height-normal;
+$overline-letter-spacing: $letter-spacing-wider;
+$overline-text-transform: uppercase;
+
+// Code/Monospace
+$code-size: $font-size-sm;                // 14px
+$code-weight: $font-weight-regular;
+$code-line-height: $line-height-normal;
+$code-font-family: $font-family-mono;
+
+// Blockquote
+$blockquote-size: $font-size-lg;          // 20px
+$blockquote-weight: $font-weight-medium;
+$blockquote-line-height: $line-height-relaxed;
+$blockquote-style: italic;
+
+// --------------------------------------------
+// BUTTON & UI TEXT STYLES
+// --------------------------------------------
+
+// Button Large
+$button-lg-size: $font-size-base;         // 16px
+$button-lg-weight: $font-weight-semibold;
+$button-lg-letter-spacing: $letter-spacing-normal;
+
+// Button Medium (Default)
+$button-md-size: $font-size-sm;           // 14px
+$button-md-weight: $font-weight-semibold;
+$button-md-letter-spacing: $letter-spacing-normal;
+
+// Button Small
+$button-sm-size: $font-size-xs;           // 12px
+$button-sm-weight: $font-weight-semibold;
+$button-sm-letter-spacing: $letter-spacing-wide;
+
+// Input/Form Labels
+$label-size: $font-size-sm;               // 14px
+$label-weight: $font-weight-medium;
+$label-line-height: $line-height-normal;
+
+// Helper Text
+$helper-size: $font-size-xs;              // 12px
+$helper-weight: $font-weight-regular;
+$helper-line-height: $line-height-normal;
+
+// --------------------------------------------
+// RESPONSIVE TYPOGRAPHY
+// --------------------------------------------
+// Fluid typography for headings on different screen sizes
+
+// Mobile heading sizes (< 768px)
+$heading-1-size-mobile: $font-size-3xl;   // 36px
+$heading-2-size-mobile: $font-size-2xl;   // 30px
+$heading-3-size-mobile: $font-size-xl;    // 24px
+$heading-4-size-mobile: $font-size-lg;    // 20px
+$heading-5-size-mobile: $font-size-base;  // 16px
+$heading-6-size-mobile: $font-size-sm;    // 14px
+
+// Tablet heading sizes (768px - 1024px)
+$heading-1-size-tablet: $font-size-4xl;   // 48px
+$heading-2-size-tablet: $font-size-3xl;   // 36px
+$heading-3-size-tablet: $font-size-2xl;   // 30px
+$heading-4-size-tablet: $font-size-xl;    // 24px
+$heading-5-size-tablet: $font-size-lg;    // 20px
+$heading-6-size-tablet: $font-size-base;  // 16px
